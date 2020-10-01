@@ -1,1 +1,310 @@
-<h1>Gamifica Agro</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>GamificAgro</title>
+    <style>
+      * {
+        font-family: monospace;
+      }
+      .container-full-height {
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 5%;
+      }
+      .title-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+      }
+      .title-shadow {
+        text-shadow: 1px 1px red;
+      }
+      .title {
+        font-weight: bold;
+      }
+      .color-red {
+        background-color: cadetblue;
+      }
+      .color-blue {
+        background-color: aquamarine;
+      }
+      .div-content {
+        margin-top: 1%;
+        align-self: flex-start;
+      }
+      .logo-background {
+        background-image: url("logo.png");
+        background-size: 5%;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-position-y: 98%;
+        background-position-x: 98%;
+      }
+      .img-div {
+        border: solid 1px black;
+        display: flex;
+        height: 70vh;
+      }
+      .div-image-in {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .div-image-in img {
+        max-height: 80%;
+      }
+    </style>
+  </head>
+
+  <body class="container-fluid" style="padding: 0">
+    <div class="container-full-height color-red">
+      <div
+        class="title-div"
+        data-aos="flip-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="false"
+        data-aos-once="true"
+      >
+        <img src="img/logo.png" class="img-fluid" />
+        <h1 class="text-white title title-shadow">GamificAgro</h1>
+      </div>
+    </div>
+    <div class="container-full-height logo-background">
+      <div
+        data-aos="flip-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="false"
+        class="div-content"
+      >
+        <h1 class="title">Objetivo</h1>
+      </div>
+      <div>
+        <p data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000">
+          GamificAgro é um projeto de gamificação do aprendizado com o objetivo
+          de ajudar os alunos dos cursos relacionados ao agro a aprender as
+          matérias agrícolas. A ideia é aplicar a gamificação no aprendizado dos
+          alunos por reforçar o ensinamento das aulas e dar pontos que podem ser
+          analisados posteriormente para ver o desenvolvimento do aluno
+        </p>
+      </div>
+    </div>
+    <div class="container-full-height color-blue logo-background">
+      <div
+        data-aos="flip-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="false"
+        class="div-content"
+      >
+        <h1 class="title">Desenvolvimento e Métodos</h1>
+      </div>
+      <div>
+        <p data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000">
+          Nosso projeto está em desenvolvimento em forma de um aplicativo de
+          questionários aonde o professor cria questões baseadas em seus
+          materias para que o aluno possa responder e ganhar pontos. No momento
+          estamos utilizando as seguintes ferramentas:
+        </p>
+        <div data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000">
+          <em>React Native</em><br />
+          <em>Express.js</em><br />
+          <em>Postgres</em><br />
+          <em>Material Paper</em><br />
+        </div>
+      </div>
+    </div>
+    <div class="container-full-height logo-background">
+      <div
+        data-aos="flip-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="false"
+        class="div-content"
+      >
+        <h1 class="title">Desenvolvimento do projeto</h1>
+      </div>
+      <div>
+        <p data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000">
+          A primeira etapa da aplicação está praticamente concluída
+        </p>
+        <div
+          class="row"
+          data-aos="zoom-in"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+        >
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            class="col-xs-12 col-sm-6 col-md-4 col-xl-3 div-image-in"
+          >
+            <span>Tela de login</span>
+            <img src="img/tela1.jpg" />
+          </div>
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            class="col-xs-12 col-sm-6 col-md-4 col-xl-3 div-image-in"
+          >
+            <span>Tela de cadastro</span>
+            <img src="img/tela2.jpg" />
+          </div>
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            class="col-xs-12 col-sm-6 col-md-4 col-xl-3 div-image-in"
+          >
+            <span>Tela de perfil</span>
+            <img src="img/tela3.jpg" />
+          </div>
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            class="col-xs-12 col-sm-6 col-md-4 col-xl-3 div-image-in"
+          >
+            <span>Adicionar questionário</span>
+            <img src="img/tela4.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-full-height logo-background">
+      <div
+        data-aos="flip-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="false"
+        class="div-content"
+      >
+        <h1 class="title">Desenvolvimento do projeto</h1>
+      </div>
+      <div>
+        <p data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000"></p>
+        <div
+          class="row"
+          data-aos="zoom-in"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+        >
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            class="col-xs-12 col-sm-6 col-md-4 col-xl-3 div-image-in"
+          >
+            <span>Responder questão</span>
+            <img src="img/tela5.jpg" />
+          </div>
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            class="col-xs-12 col-sm-6 col-md-4 col-xl-3 div-image-in"
+          >
+            <span>Enviar questionário</span>
+            <img src="img/tela6.jpg" />
+          </div>
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            class="col-xs-12 col-sm-6 col-md-4 col-xl-3 div-image-in"
+          >
+            <span>Visualizar questão</span>
+            <img src="img/tela7.jpg" />
+          </div>
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            class="col-xs-12 col-sm-6 col-md-4 col-xl-3 div-image-in"
+          >
+            <span>Visualizar questão (pontos)</span>
+            <img src="img/tela8.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-full-height color-blue logo-background">
+      <div
+        data-aos="flip-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="false"
+        class="div-content"
+        data-aos-anchor-placement="center-center"
+      >
+        <h1 class="title">Perpectivas futuras</h1>
+      </div>
+      <div>
+        <p
+          data-aos="zoom-in"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-anchor-placement="center-center"
+        >
+          Nós imaginamos que o GamificAgro é um passo na direção de um
+          aprendizado simplificado e com recompensas, por enquanto a nossa ideia
+          ainda pode estar longe por necessitarmos da colaboração de todos os
+          envolvidos - desde alunos até professores e diretores - mas a
+          pontuação que pode ser utilizada para mostrar o desempenho e evolução
+          de cada um também poderia, em um futuro ideal, contar para as notas e
+          talvez até currículo do aluno no futuro.
+        </p>
+      </div>
+    </div>
+  </body>
+
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
